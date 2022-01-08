@@ -10,7 +10,7 @@ int length(string s){
     int i;
     for(i=s.length()-1;i>=0;i--){
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')){
-            
+          //the c counter starts incrementing once it encounters a word(starting from a charecter)
             flag =1;
             c++;
         }
