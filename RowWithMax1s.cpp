@@ -1,8 +1,16 @@
 /*Given a boolean 2D array of n x m dimensions where each row is sorted.
-Find the 0-based index of the first row that has the maximum number of 1's. If no such row exists, return -1.*/
+Find the 0-based index of the first row that has the maximum number of 1's. If no such row exists, return -1.
 
+Sample Input 0
+4 4
+0 1 1 1
+0 0 1 1
+1 1 1 1
+0 0 0 0
 
-
+Sample Output 0
+2
+*/
 
 #include <iostream>
 using namespace std;
