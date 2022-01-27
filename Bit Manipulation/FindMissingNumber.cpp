@@ -6,7 +6,7 @@ Hashing with time complexity O(n)
 Using XOR operator with time complexity O(n).
 
 Properties of XOR operation:
-XOR of two distinct numbers is 0.
+XOR of two distinct numbers is 1.
 XOR of any number, a and 0 is a.
 XOR of a and a is 0.
 
