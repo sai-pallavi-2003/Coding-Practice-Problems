@@ -32,4 +32,6 @@ The approach:
 The string is first converted into a BigInteger and another BigInteger ans performs the 'mod' operation on the two values.
 'Mod' : mod is an inbuilt function inside the BigInteger class which returns the remainder of the two big integers and it is always a non negative big integer
 this is then converted into an integer using the intValue and then is again applied the modulo operator to check if it gives 0 or 1.
+Try-Catch block is used as debug statement.
+NumberFormatException occurs when a string cannot be converted into a BigInteger
 */
