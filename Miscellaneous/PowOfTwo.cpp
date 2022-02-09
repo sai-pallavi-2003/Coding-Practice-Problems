@@ -23,6 +23,7 @@ bool powerOfTwo(int n)
     }
     return 0;
 }
+//extension to leetcode solution
 int main()
 {
     int n;
