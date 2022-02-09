@@ -1,4 +1,5 @@
 /* We are given an integer and the goal is to check whether the integer is a power of two, that is, it can be represented as some whole power of ‘2‘.
+* here we are checking only for an integer not for long 
 
 Brute Force approach :
 
