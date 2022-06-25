@@ -35,10 +35,11 @@ public:
 
 
 
-#include<iostream>
+ // } Driver Code Ends
+ #include<iostream>
 using namespace std;
 int missingNumber(int arr[],int n) {
-        int xor1=arr[0],xor2=0,xor11=0;
+        int xor1=arr[0],xor2=1,xor11=0;
 /* calculating the xor of all elements in the array*/
 /* if [0,1,3] are given, 2 is the missing number, so xor of 0,1,3.*/
         for(int i=1;i<n;i++){
@@ -46,7 +47,7 @@ int missingNumber(int arr[],int n) {
         }
 /*calculating the xor of all the numbers till n*/
 /*xor of all numbers from 0 to 3, so xor of 0,1,2,3*/
-        for(int i=1;i<=n;i++){
+        for(int i=2;i<=n+1;i++){
             xor2 = xor2^i;
         }
 /*calculating the xor of above two*/
@@ -54,6 +55,7 @@ int missingNumber(int arr[],int n) {
         xor11= xor1^xor2;
         return xor11;
 }
+
 int main(){
     int arr[100],n;
     cout<<"n: ";
