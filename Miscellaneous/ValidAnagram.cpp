@@ -40,12 +40,15 @@ int solve(string s1, string s2){ //CODE HERE int arr[140]={0};
     
     for(int i=0;i<s1.length();i++)
         arr[s1[i]]++;
+    //increase frequency of charecters of string 1 in the array
     
     for(int i=0;i<s1.length();i++)
         arr[s2[i]]--;
+    //decreasae the frequency of the string 2 in array 
     
     for(int i=0;i<140;i++)
     {
+        //if all the charecters are there the array will be empty 
         if(arr[i]!=0)
             return 0;
     }
