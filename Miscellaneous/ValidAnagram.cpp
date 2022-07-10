@@ -5,6 +5,7 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 return 1 if true or 0 if false.
 */
 
+// non hashmap approach 
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -28,4 +29,25 @@ return 1;
 }
 int main(){
    cout<<"answer:  "<<solve("cat","rac");
+}
+
+
+//hashmap solution
+int solve(string s1, string s2){ //CODE HERE int arr[140]={0};
+
+    if(s1.length()!=s2.length())
+        return 0;
+    
+    for(int i=0;i<s1.length();i++)
+        arr[s1[i]]++;
+    
+    for(int i=0;i<s1.length();i++)
+        arr[s2[i]]--;
+    
+    for(int i=0;i<140;i++)
+    {
+        if(arr[i]!=0)
+            return 0;
+    }
+    return 1;
 }
